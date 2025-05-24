@@ -52,7 +52,7 @@ pip install -r requirements.txt
 # Or manually:
 pip install torch transformers datasets sacrebleu
 
-
+---
 ## 📁 Data Preparation
 
 This project uses the publicly available dataset:
