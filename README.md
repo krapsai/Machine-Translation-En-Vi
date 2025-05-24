@@ -13,8 +13,6 @@
 - [🏋️ Training](#-training)
 - [📊 Evaluation](#-evaluation)
 - [📈 Results](#-results)
-- [📂 Folder Structure](#-folder-structure)
-- [📄 License](#-license)
 
 ---
 
