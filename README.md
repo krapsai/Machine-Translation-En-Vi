@@ -67,4 +67,33 @@ print(dataset["train"][0])
 ```
 
 You can replace this with any bilingual English–Vietnamese dataset, such as Tatoeba, IWSLT, or your own CSV file with english and vietnamese columns.
-You can replace this with any bilingual English–Vietnamese dataset, such as Tatoeba, IWSLT, or your own CSV file with english and vietnamese columns.
+
+---
+
+## 🏋️ Training
+
+Train Transformer from Scratch
+
+```bash
+jupyter lab Transformer_Scratch.ipynb
+```
+
+Implements full encoder–decoder architecture
+
+Includes positional encoding, masking, attention
+
+Trains using cross-entropy loss
+
+Outputs BLEU scores and translation examples
+
+Fine-tune MarianMT
+
+```bash
+jupyter lab Transformer_Pretrained.ipynb
+```
+
+Uses Hugging Face’s Trainer API
+
+Applies supervised learning with bilingual pairs
+
+Outputs fine-tuned model and predictions
