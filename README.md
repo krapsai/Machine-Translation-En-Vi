@@ -47,3 +47,8 @@ cd english-vietnamese-translation-transformers
 pip install -r requirements.txt
 # or
 pip install torch transformers sacrebleu datasets
+
+## Data Preparation
+The bilingual dataset is loaded from HuggingFace datasets ncduy/mt-en-vi 
+
+You can use alternative datasets retrieved from 🤗 Datasets or Opus even your own dataset
