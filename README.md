@@ -78,11 +78,9 @@ Train Transformer from Scratch
 jupyter lab Transformer_Scratch.ipynb
 ```
 
-Implements full encoder–decoder architecture
-
-Includes positional encoding, masking, attention
-
-Trains using cross-entropy loss
+1. Implements full encoder–decoder architecture
+2. Includes positional encoding, masking, attention
+3. Trains using cross-entropy loss
 
 Outputs BLEU scores and translation examples
 
