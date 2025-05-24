@@ -1,73 +1,53 @@
-# English-Vietnamese Neural Machine Translation 🧠🇬🇧🇻🇳
+# English–Vietnamese Neural Machine Translation 🧠🇬🇧🇻🇳
 
-> A complete project for building English–Vietnamese machine translation systems using Transformers from scratch and fine-tuning pretrained MarianMT.
-
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Model Approaches](#model-approaches)
-- [Installation](#installation)
-- [Data Preparation](#data-preparation)
-- [Training](#training)
-- [Evaluation](#evaluation)
-- [Results](#results)
-- [Folder Structure](#folder-structure)
-- [License](#license)
+> A complete project for building English–Vietnamese machine translation systems using Transformers from scratch and fine-tuning pretrained MarianMT models.
 
 ---
 
-## Overview
+## 📋 Table of Contents
 
-This project explores English-Vietnamese neural machine translation through two approaches:
-
-1. **Transformer from Scratch**: Full custom implementation of the Transformer architecture using PyTorch.
-2. **Pretrained Transformer (MarianMT)**: Fine-tuning Hugging Face’s `Helsinki-NLP/opus-mt-en-vi` model on a bilingual corpus.
-
-Both models are evaluated using BLEU scores and qualitative comparisons.
+- [📌 Overview](#-overview)
+- [🔧 Model Approaches](#-model-approaches)
+- [⚙️ Installation](#️-installation)
+- [📁 Data Preparation](#-data-preparation)
+- [🏋️ Training](#-training)
+- [📊 Evaluation](#-evaluation)
+- [📈 Results](#-results)
+- [📂 Folder Structure](#-folder-structure)
+- [📄 License](#-license)
 
 ---
 
-## Model Approaches
+## 📌 Overview
+
+This project explores **Neural Machine Translation (NMT)** between English and Vietnamese via two distinct approaches:
+
+1. **Transformer From Scratch** – Custom implementation based on *"Attention is All You Need"* using PyTorch.
+2. **Pretrained MarianMT** – Fine-tuning the pretrained `Helsinki-NLP/opus-mt-en-vi` model from Hugging Face on a bilingual corpus.
+
+Both models are trained and evaluated using BLEU scores and sample output comparisons.
+
+---
+
+## 🔧 Model Approaches
 
 | Notebook | Description |
 |----------|-------------|
-| `Transformer_Scratch.ipynb` | Implements the original Transformer architecture from Vaswani et al. using PyTorch (no pretraining). |
-| `Transformer_Pretrained.ipynb` | Fine-tunes a pretrained MarianMT model on a custom English–Vietnamese parallel dataset. |
+| `Transformer_Scratch.ipynb` | Implements a full Transformer model from scratch using PyTorch. |
+| `Transformer_Pretrained.ipynb` | Fine-tunes a pretrained MarianMT model on the `ncduy/mt-en-vi` dataset. |
 
 ---
 
-## Installation
+## ⚙️ Installation
+
+Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/<krapsai>/english-vietnamese-translation-transformers.git
+git clone https://github.com/krapsai/english-vietnamese-translation-transformers.git
 cd english-vietnamese-translation-transformers
 
-## Setup environment
+# Install dependencies
 pip install -r requirements.txt
-# or
-pip install torch transformers sacrebleu datasets
 
----
-
----
-
-## Data Preparation
-The bilingual dataset is loaded from HuggingFace datasets ncduy/mt-en-vi 
-
-You can use alternative datasets retrieved from 🤗 Datasets or Opus even your own dataset
-
----
-
-## Training
-
-### Train from Scratch:
-
-```bash
-jupyter lab Transformer_Scratch.ipynb
-```
-
-### Fine-tune MarianMT:
-
-```bash
-jupyter lab Transformer_Pretrained.ipynb
+# Or manually:
+pip install torch transformers datasets sacrebleu
