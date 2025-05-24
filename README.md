@@ -51,3 +51,20 @@ pip install -r requirements.txt
 
 # Or manually:
 pip install torch transformers datasets sacrebleu
+
+---
+
+## 📁 Data Preparation
+
+This project uses the publicly available dataset:
+
+📦 Hugging Face – ncduy/mt-en-vi
+
+```python
+from datasets import load_dataset
+dataset = load_dataset("ncduy/mt-en-vi")
+print(dataset["train"][0])
+```
+
+You can replace this with any bilingual English–Vietnamese dataset, such as Tatoeba, IWSLT, or your own CSV file with english and vietnamese columns.
+You can replace this with any bilingual English–Vietnamese dataset, such as Tatoeba, IWSLT, or your own CSV file with english and vietnamese columns.
