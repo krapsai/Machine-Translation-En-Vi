@@ -40,10 +40,10 @@ Both models are evaluated using BLEU scores and qualitative comparisons.
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/english-vietnamese-translation-transformers.git
+git clone https://github.com/<krapsai>/english-vietnamese-translation-transformers.git
 cd english-vietnamese-translation-transformers
 
-# Setup environment
+## Setup environment
 pip install -r requirements.txt
 # or
 pip install torch transformers sacrebleu datasets
