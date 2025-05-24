@@ -90,8 +90,26 @@ Fine-tune MarianMT
 jupyter lab Transformer_Pretrained.ipynb
 ```
 
-Uses Hugging Face’s Trainer API
-
-Applies supervised learning with bilingual pairs
+1. Uses Hugging Face’s Trainer API
+2. Applies supervised learning with bilingual pairs
 
 Outputs fine-tuned model and predictions
+
+---
+
+## 📊 Evaluation
+
+Main metric: BLEU Score (via sacrebleu)
+
+Evaluated on a held-out test split
+
+Sample translation outputs included for comparison
+
+---
+
+## 📈 Results
+
+| Model	| BLEU Score	| Notes |
+|---|---|---|
+| Transformer from Scratch	| ~10–15	| Varies with training time and data volume |
+| MarianMT Fine-tuned	| ~25–35	| Higher accuracy with fewer epochs |
