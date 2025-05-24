@@ -111,5 +111,5 @@ Sample translation outputs included for comparison
 
 | Model	| BLEU Score	| Notes |
 |---|---|---|
-| Transformer from Scratch	| ~10–15	| Varies with training time and data volume |
-| MarianMT Fine-tuned	| ~25–35	| Higher accuracy with fewer epochs |
+| Transformer from Scratch	| 33.48	| Varies with training time and data volume |
+| MarianMT Fine-tuned	| 42.98	| Higher accuracy with fewer epochs |
