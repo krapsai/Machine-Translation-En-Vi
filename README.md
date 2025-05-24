@@ -51,6 +51,7 @@ pip install -r requirements.txt
 
 # Or manually:
 pip install torch transformers datasets sacrebleu
+```
 
 ---
 ## 📁 Data Preparation
