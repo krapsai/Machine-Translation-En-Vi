@@ -58,3 +58,16 @@ The bilingual dataset is loaded from HuggingFace datasets ncduy/mt-en-vi
 You can use alternative datasets retrieved from 🤗 Datasets or Opus even your own dataset
 
 ---
+
+## Training
+
+### Train from Scratch:
+
+```bash
+jupyter lab Transformer_Scratch.ipynb
+```
+
+### Fine-tune MarianMT:
+
+```bash
+jupyter lab Transformer_Pretrained.ipynb
